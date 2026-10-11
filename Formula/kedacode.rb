@@ -3,8 +3,8 @@ class Kedacode < Formula
 
   desc "Issue Agent Runner (iar): turn GitHub Issues into a local AI agent queue"
   homepage "https://github.com/ZataZhang/keda"
-  url "https://files.pythonhosted.org/packages/c1/43/ed7897846f7993d10ea5564e8f7a38768a5b971260b53cc30b5c826bed21/kedacode-0.2.1.tar.gz"
-  sha256 "3b0f2bce4d84826b2e3bb5d939ad8a3161366581146b3d9b6e9703c149958f3b"
+  url "https://files.pythonhosted.org/packages/9b/d6/5171ca20b68086784fb8cf3e42ecffd38082f6e831f83358cabf984aa6d3/kedacode-0.3.0.tar.gz"
+  sha256 "dec7358fd61911ceae6a2db13f2292d4596e33eb672a78e3e37837a88a4fd913"
   license "Apache-2.0"
 
   depends_on "python@3.12"
