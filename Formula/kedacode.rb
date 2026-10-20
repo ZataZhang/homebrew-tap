@@ -1,14 +1,15 @@
 class Kedacode < Formula
   include Language::Python::Virtualenv
 
-  desc "Issue Agent Runner (iar): turn GitHub Issues into a local AI agent queue"
+  desc "Turn GitHub Issues into a local AI agent queue"
   homepage "https://github.com/ZataZhang/keda"
   url "https://files.pythonhosted.org/packages/58/2c/1c8bdfdd05c214cbe9cea607931f78c472f12c0a8905324dc91a8f8dea2e/kedacode-0.5.0.tar.gz"
   sha256 "589bbb3aba20f5de47bc3232cb177ea828b5a3d01ea1682358ce1e4a23bbd180"
   license "Apache-2.0"
 
-  depends_on "python@3.12"
   depends_on "rust" => :build
+  depends_on "libyaml"
+  depends_on "python@3.12"
 
   resource "annotated-doc" do
     url "https://files.pythonhosted.org/packages/5a/8e/38aa427ed5402449e226975b649c5dc73ccadfefeb95e6aecb8f8ea4b6b6/annotated_doc-0.0.5.tar.gz"
@@ -177,10 +178,13 @@ class Kedacode < Formula
 
   def install
     virtualenv_install_with_resources
-    bin.install_symlink libexec/"bin/iar"
+    bin.install_symlink libexec/"bin/kc" if (libexec/"bin/kc").exist?
+    bin.install_symlink libexec/"bin/kedacode" if (libexec/"bin/kedacode").exist?
+    bin.install_symlink libexec/"bin/iar" if (libexec/"bin/iar").exist? # legacy-alias
   end
 
   test do
-    assert_match version.to_s, shell_output("#{bin}/iar --version")
+    assert_match version.to_s, shell_output("#{bin}/kc --version")
+    assert_match version.to_s, shell_output("#{bin}/kedacode --version")
   end
 end

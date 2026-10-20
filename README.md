@@ -1,6 +1,6 @@
 # ZataZhang/homebrew-tap
 
-`kedacode` 的 Homebrew formula（安装后的命令名是 `iar`），由
+`kedacode` 的 Homebrew formula（安装后的命令名是 `kc`，另有 `kedacode` 长写），由
 [keda](https://github.com/ZataZhang/keda) 仓库的 release 流水线自动更新。
 
 ## 安装
