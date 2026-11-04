@@ -3,8 +3,8 @@ class Kedacode < Formula
 
   desc "Turn GitHub Issues into a local AI agent queue"
   homepage "https://github.com/ZataZhang/keda"
-  url "https://files.pythonhosted.org/packages/58/2c/1c8bdfdd05c214cbe9cea607931f78c472f12c0a8905324dc91a8f8dea2e/kedacode-0.5.0.tar.gz"
-  sha256 "589bbb3aba20f5de47bc3232cb177ea828b5a3d01ea1682358ce1e4a23bbd180"
+  url "https://files.pythonhosted.org/packages/d1/c8/bccf6eae3c7f1d46245aaabae6fd5994f6bf5511786eb3e5ebd076a9e0f1/kedacode-0.6.0.tar.gz"
+  sha256 "cc5ab1dcf6b566f8999f95aca247752691203e51b7fd01a84b24731f64b2d565"
   license "Apache-2.0"
 
   depends_on "rust" => :build
