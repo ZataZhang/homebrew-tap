@@ -42,8 +42,8 @@ class Kedacode < Formula
   end
 
   resource "fastapi" do
-    url "https://files.pythonhosted.org/packages/a4/62/19000d0f3699cacaeffe8a3c4cc7046d87aac3291163ffeb2ef08b82d859/fastapi-0.163.1.tar.gz"
-    sha256 "3d364b02a68b67292e833ff2dfed3b8dc3aeadf73e271c15316c6c166668792f"
+    url "https://files.pythonhosted.org/packages/bf/2f/d173f9bf5aba1285067ff47fd06b7e35bb922e3a1e52588fb7b31319d4ad/fastapi-0.163.2.tar.gz"
+    sha256 "e605c4c9b94be78b43aa8239a62ccf7b6684346cdc9e053633feab0ab21b87c7"
   end
 
   resource "h11" do
